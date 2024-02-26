@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+
+    <head>
+        <title>Qenel Home</title>
+    </head>
+
+    <body>
+        <f:view>
+            <h:form>
+                <h3>What would you like to check out?</h3>
+                <hr/>
+                <h4>About Qenel</h4>
+                <h:commandButton value="About Us"
+                                 action="about"></h:commandButton>
+                <h4>Phones for Sale</h4>
+                <h:commandButton value="View Phones"
+                                 action="phones"></h:commandButton>
+                <h4>Phone Inventory</h4>
+                <h:commandButton value="Phone Table"
+                                 action="phonetable.xhtml"
+                                 actionListener="#{PhoneRepo.updateViewDate}">
+                </h:commandButton>
+                <h4>Register as a Customer</h4>
+                <h:commandButton value="Register"
+                                 action="customer"></h:commandButton>
+            </h:form>
+        </f:view>
+    </body>
+</html>
